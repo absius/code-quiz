@@ -6,7 +6,7 @@ var qAs = [{question:"Commonly used data types do Not include:", a1:"strings", a
 {question:"A very useful tool used during development and debugging for printing content to the debugger is:", a1:"Javascript", a2:"terminal / bash", a3:"for loops", a4:"console.log", correct:"answer4"}];
 
 var scores = [];
-var timer = 30;
+var timer = 75;
 var scoreCounter;
 var questionCounter = 0;
 
@@ -114,17 +114,20 @@ document.addEventListener('click',function(e){
         
         localStorage.setItem("highscores", JSON.stringify(scores));
         getHighScores();
+        document.getElementById("score-area").innerHTML ="";
+        document.getElementById("table").style.display = "block";
     }
     }
 
  });
 
  function startTimer (){
-    scoreCounter = setInterval(function(){ timer--; document.getElementById("score-area").innerHTML = timer;}, 1000);
+    scoreCounter = setInterval(function(){document.getElementById("score-area").innerHTML = timer; timer--; }, 1000);
     
  }
 function startQuiz (){
     document.getElementById("heading").innerHTML = "Quiz in Progress";
+    document.getElementById("table").style.display = "none";
     document.getElementById("highs").innerHTML = "";
 getQuestionAnswer(questionCounter);
 startTimer();
