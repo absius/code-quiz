@@ -1,5 +1,7 @@
 Code Quiz Challenge Project
 
+Create a Code quiz using javascript dom manipulation with a timer and local storage element
+
 GIVEN I am taking a code quiz
 WHEN I click the start button
 THEN a timer starts and I am presented with a question
@@ -12,3 +14,6 @@ THEN the game is over
 WHEN the game is over
 THEN I can save my initials and score
 
+Link to Repository https://absius.github.io/code-quiz/
+
+Link to deployed page https://absius.github.io/
