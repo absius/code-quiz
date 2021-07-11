@@ -1,9 +1,9 @@
 
-var qAs = [{question:"Q1", a1:"500", a2:"white", a3:"test3", a4:"test4", correct:"answer4"},
-{question:"Q2", a1:"500", a2:"white", a3:"test3", a4:"test4", correct:"answer2"},
-{question:"Q3", a1:"500", a2:"white", a3:"test3", a4:"test4", correct:"answer1"},
-{question:"Q4", a1:"500", a2:"white", a3:"test3", a4:"test4", correct:"answer3"},
-{question:"Q5", a1:"500", a2:"white", a3:"test3", a4:"test4", correct:"answer4"}];
+var qAs = [{question:"Commonly used data types do Not include:", a1:"strings", a2:"booleans", a3:"alerts", a4:"numbers", correct:"answer3"},
+{question:"The condition in an if / else statement is enclosed with ____.", a1:"quotes", a2:"curly brackets", a3:"parentheses", a4:"square brackets", correct:"answer3"},
+{question:"Arrays in Javascript can be used to store ____.", a1:"numbers and strings", a2:"other arrays", a3:"booleans", a4:"all of the above", correct:"answer4"},
+{question:"String values must be enclosed within _____ when being assigned to variables.", a1:"commas", a2:"curly brackets", a3:"quotes", a4:"parentheses", correct:"answer3"},
+{question:"A very useful tool used during development and debugging for printing content to the debugger is:", a1:"Javascript", a2:"terminal / bash", a3:"for loops", a4:"console.log", correct:"answer4"}];
 
 var scores = [];
 var timer = 30;
@@ -39,27 +39,37 @@ function getQuestionAnswer (index){
     var t = document.createTextNode(qAs[index].question);
     para.appendChild(t);
     var div = document.createElement("div");
+    var divQ1 = document.createElement("div");
     var answer1 = document.createElement("button");
     var answer1Text = document.createTextNode(qAs[index].a1);
     answer1.appendChild(answer1Text);
     answer1.id="answer1";
-    div.appendChild(answer1);
+    divQ1.appendChild(answer1);
+    var divQ2 = document.createElement("div");
+
     var answer2 = document.createElement("button");
     var answer2Text = document.createTextNode(qAs[index].a2);
     answer2.appendChild(answer2Text);
     answer2.id="answer2";
-    div.appendChild(answer2);
+    divQ2.appendChild(answer2);
+    var divQ3 = document.createElement("div");
+
     var answer3 = document.createElement("button");
     var answer3Text = document.createTextNode(qAs[index].a3);
     answer3.appendChild(answer3Text);
     answer3.id="answer3";
-    div.appendChild(answer3);
+    divQ3.appendChild(answer3);
+    var divQ4 = document.createElement("div");
+
     var answer4 = document.createElement("button");
     var answer4Text = document.createTextNode(qAs[index].a4);
     answer4.appendChild(answer4Text);
     answer4.id="answer4";
-    div.appendChild(answer4);
-
+    divQ4.appendChild(answer4);
+div.appendChild(divQ1);
+div.appendChild(divQ2);
+div.appendChild(divQ3);
+div.appendChild(divQ4);
     var area = document.getElementById("quiz-area");
     area.innerHTML="";
     area.appendChild(para);
