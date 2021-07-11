@@ -115,6 +115,7 @@ document.addEventListener('click',function(e){
  }
 function startQuiz (){
     document.getElementById("heading").innerHTML = "Quiz in Progress";
+    document.getElementById("highs").innerHTML = "";
 getQuestionAnswer(questionCounter);
 startTimer();
 
