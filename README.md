@@ -14,7 +14,7 @@ THEN the game is over
 WHEN the game is over
 THEN I can save my initials and score
 
-Link to Repository https://absius.github.io/code-quiz/
+Link to Repository https://github.com/absius/code-quiz
 
 Link to deployed page https://absius.github.io/code-quiz/
 
