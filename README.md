@@ -17,3 +17,5 @@ THEN I can save my initials and score
 Link to Repository https://absius.github.io/code-quiz/
 
 Link to deployed page https://absius.github.io/
+
+![codequiz screenshot](https://user-images.githubusercontent.com/50057893/125217772-170b2200-e287-11eb-92f8-4005fddb88a0.png)
