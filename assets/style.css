@@ -7,11 +7,17 @@
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
-    margin-bottom: 15px;
+    margin: 15px;
   }
 
   #confirm {
       color: gray;
 font-size: 24px;
 border-top: 2px solid gray;
+  }
+
+  #initialsInput {
+    border: 2px solid black;
+    border-radius: 4px;
+    background-color: lightblue;
   }
